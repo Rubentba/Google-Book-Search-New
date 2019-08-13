@@ -10,6 +10,14 @@ module.exports = {
                 res.status(422).json(err);
             });
     },
+    findById: function (req, res) {
+        db.Book.find(req.params.id)
+            .then(dbModel => res.json(dbModel))
+            .catch(err => {
+                console.log(err);
+                res.status(422).json(err);
+            });
+    },
     create: function (req, res) {
         db.Book.create(req.body)
             .then(dbModel => res.json(dbModel))
