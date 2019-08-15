@@ -6,14 +6,14 @@ import Typography from '@material-ui/core/Typography';
 function Footer() {
 
     return (
-        <AppBar position="static" style={{ top: 'auto', bottom: 0, backgroundColor: "#616161" }}>
+        <AppBar position='static' style={{ top: 'auto', bottom: 0, backgroundColor: '#616161' }}>
             <Toolbar>
                 <Typography style={{ position: 'absolute', right: '45%', textAlign: 'center' }}>
                     &#169; 2019 BookSearch
                 </Typography>
             </Toolbar>
         </AppBar>
-    )
-}
+    );
+};
 
 export default Footer

@@ -1,18 +1,18 @@
 import axios from 'axios';
-import APIKEY from '../config/keys';
-const URL = 'https://www.googleapis.com/books/v1/volumes?q='
+// import APIKEY from '../config/keys';
+const URL = 'https://www.googleapis.com/books/v1/volumes?q=';
 
 export default {
-    // Gets all books
+    // Queries API books
     searchBooks: function (query) {
-        return axios.get(URL + query + APIKEY);
+        return axios.get(URL + query);
     },
     // Gets the book with the given id
     getBook: function () {
         return axios.get('/api/books/');
     },
     // Gets the book with the given id
-    getBook: function (id) {
+    getBookById: function (id) {
         return axios.get('/api/books/' + id);
     },
     // Deletes the book with the given id
