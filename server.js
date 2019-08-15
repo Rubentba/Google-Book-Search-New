@@ -25,7 +25,7 @@ app.use(routes);
 
 // DB URL
 const MONGODB_URI =
-    process.env.MONGODB_URI || 'mongodb://localhost/mongoHeadlines';
+    process.env.MONGODB_URI || 'mongodb://admin:googlebooks1@ds163517.mlab.com:63517/heroku_c5n91cmh';
 
 // Connect to the Mongo DB
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
@@ -42,3 +42,5 @@ app.listen(PORT, function () {
 });
 
 module.exports = app;
+
+// heroku push attempt 2
