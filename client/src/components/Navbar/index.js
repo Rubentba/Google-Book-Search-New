@@ -1,5 +1,5 @@
 import React from 'react';
-import Appbar from '@material-ui/core/Appbar';
+import Appbar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import SearchButton from '../SearchButton/index';
 import SavedButton from '../SavedButton/index';
