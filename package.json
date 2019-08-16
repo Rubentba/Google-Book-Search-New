@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/Rubentba/Google-Book-Search-New/issues"
   },
-  "homepage": "https://github.com/Rubentba/Google-Book-Search-New#readme"
+  "homepage": "https://github.com/Rubentba/Google-Book-Search-New#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.6.9",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7"
+  }
 }
